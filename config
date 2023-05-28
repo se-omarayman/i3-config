@@ -222,6 +222,8 @@ exec --no-startup-id nitrogen --restore
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
 
+#screenshot
+bindsym Print exec maim -s | xclip -selection clipboard -t image/png
 
 #control volume
 # bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
